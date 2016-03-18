@@ -1,0 +1,44 @@
+GitHub website - Repositories
+Meaning of commands
+
+import os - Import the os Module (os is a predefined Python module to use)
+# The import statements allow you to use functions defined elsewhere 
+(either in a standard module, or your own).
+
+if len(sys.argv) == 2:	
+filename = sys.argv[1]
+if not os.path.isfile(filename):
+print '[-] ' + filename + ' does not exist.'
+
+if - conditional parameters to situations
+if not - conditional parameter to negate the condition
+else - supplement of if command. To be used to posterity sake with every if command 
+
+__version__ - ?
+
+.insert() - ?
+
+os.path.join - 
+Join one or more path components intelligently. 
+The return value is the concatenation of path and any members of *paths 
+with exactly one directory separator (os.sep) following each non-empty part except the last, 
+meaning that the result will only end in a separator if the last part is empty.
+No string should include a "/". 
+One whole point of os.path.join is to prevent putting any slashes in the path
+
+def noop():
+  pass
+A function that does nothing. 
+pass is a null operation — when it is executed, nothing happens. 
+It is useful as a placeholder when a statement is required syntactically, 
+but no code needs to be executed, for example:  
+def f(arg): pass    # a function that does nothing (yet)
+
+_future_ - 
+1.) To avoid confusing existing tools that analyze import statements 
+and expect to find the modules they’re importing.
+2.) To ensure that future statements run under releases prior to 2.1 at least yield runtime 
+exceptions (the import of __future__ will fail, because there was no module of that name 
+prior to 2.1).
+
+mlab.figure() - ??
